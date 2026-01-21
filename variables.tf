@@ -1,6 +1,7 @@
 variable "aws_region" {
        description = "The AWS region to create things in." 
-       default     = "us-east-1" 
+       default     = "us-east-1"
+       type        = string
 }
 
 variable "key_name" { 
@@ -9,7 +10,7 @@ variable "key_name" {
 }
 
 variable "instance_type" { 
-    description = "instance type for ec2" 
+    description = "instance type for ec2 instance" 
     default     =  "t2.micro" 
 }
 
